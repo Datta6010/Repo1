@@ -1,0 +1,12 @@
+function charFrequency(str) {
+    let freq = {}; 
+    for (let ch of str) {
+        if (ch === 'a') 
+            {
+            freq[ch] = (freq[ch] || 0) + 1;
+        }
+    }
+    return freq; 
+}
+
+console.log(charFrequency("Datta")); 
